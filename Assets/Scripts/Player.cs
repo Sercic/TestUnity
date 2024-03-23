@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private bool bagIsOpen;
+    private static Player instance;
+    public static Player Instance => instance;   
 
+    private bool bagIsOpen;
+    public GameObject Panel;
+
+    private void Awake()
+    {
+        instance = this;
+    }
     private void Start()
     {
         bagIsOpen = false;
+        Panel.SetActive(false);
     }
 
 
@@ -48,5 +57,14 @@ public class Player : MonoBehaviour
         }
         #endregion
 
+    }
+
+    public void Talk(GameObject talkTarget)
+    {
+        Panel.SetActive(true);
+    }
+    public void TalkOver()
+    {
+        Panel.SetActive(false);
     }
 }

@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccaa5c67d1f874c42b2819ac68f08ba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Normalspeed: 1.5
+  Normalspeed: 3
   PosTrans: {fileID: 1466027729307468215}
   Offset: {x: 3.8, y: 0.8}
 --- !u!143 &8199098628531946906

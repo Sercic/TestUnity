@@ -26,6 +26,7 @@ public abstract class ItemBase : MonoBehaviour
     {
         if (collision.tag != "Player") return;
         HideTip();
+        Player.Instance.TalkOver();
     }
 
     private void ShowTip()

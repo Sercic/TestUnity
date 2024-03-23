@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +11,7 @@ public class ItemTest : ItemBase{
 
     protected override void Talk()
     {
-        throw new System.NotImplementedException();
+        Player.Instance.Talk(this.gameObject);
     }
     private void Update()
     {

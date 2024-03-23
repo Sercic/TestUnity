@@ -123,6 +123,83 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &2457500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2457502}
+  - component: {fileID: 2457501}
+  m_Layer: 0
+  m_Name: edge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &2457501
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2457500}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 5.8809557, y: 1.2268922}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 21.756311, y: 16.01611}
+  m_EdgeRadius: 0
+--- !u!4 &2457502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2457500}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.045164, y: -1.84197, z: -0.81381965}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &304392592
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,6 +471,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &958848529 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3641726720553891278, guid: b384734f2d714154a993345c8ced66e8, type: 3}
+  m_PrefabInstance: {fileID: 3484297810523481928}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &958848532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958848529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ConfineMode: 0
+  m_BoundingVolume: {fileID: 0}
+  m_BoundingShape2D: {fileID: 0}
+  m_ConfineScreenEdges: 1
+  m_Damping: 0
 --- !u!1 &1259474525
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71387c08d9e32d041a51448c43811089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Panel: {fileID: 489492999}
 --- !u!1 &1593729267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,6 +1232,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 372357392074413936, guid: b384734f2d714154a993345c8ced66e8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1437594634}
+    - targetCorrespondingSourceObject: {fileID: 3641726720553891278, guid: b384734f2d714154a993345c8ced66e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 958848532}
   m_SourcePrefab: {fileID: 100100000, guid: b384734f2d714154a993345c8ced66e8, type: 3}
 --- !u!114 &3820160782675922159
 MonoBehaviour:
@@ -1146,7 +1249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SprTip: {fileID: 385541505852810670}
-  CanTalk: 0
+  CanTalk: 1
   CanPack: 0
   Collider: {fileID: 458477612051704835}
 --- !u!4 &5406777673752985402 stripped
@@ -1358,3 +1461,4 @@ SceneRoots:
   - {fileID: 2023515868}
   - {fileID: 1315303637}
   - {fileID: 1702711168}
+  - {fileID: 2457502}
