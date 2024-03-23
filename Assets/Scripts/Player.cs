@@ -8,7 +8,9 @@ public class Player : MonoBehaviour
     public static Player Instance => instance;   
 
     private bool bagIsOpen;
-    public GameObject Panel;
+    private DiaLogPanel DiaPanel;
+
+    public bool InTalk;
 
     private void Awake()
     {
@@ -17,7 +19,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         bagIsOpen = false;
-        Panel.SetActive(false);
+        InTalk = false;
     }
 
 
@@ -59,12 +61,15 @@ public class Player : MonoBehaviour
 
     }
 
-    public void Talk(GameObject talkTarget)
+    public void TalkStart(DiaLogData.DiaLogue dia)
     {
-        Panel.SetActive(true);
+        DiaPanel = UGPanelManager.Instance.ShowPanel<DiaLogPanel>();
+        DiaPanel.SetDia(dia);
+        InTalk = true;
     }
     public void TalkOver()
     {
-        Panel.SetActive(false);
+        DiaPanel.HideMe();
+        InTalk = false;
     }
 }

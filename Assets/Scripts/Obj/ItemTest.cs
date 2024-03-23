@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ItemTest : ItemBase{
-
     protected override int IntpPackage()
     {
         throw new System.NotImplementedException();
@@ -11,12 +10,13 @@ public class ItemTest : ItemBase{
 
     protected override void Talk()
     {
-        Player.Instance.Talk(this.gameObject);
+        Player.Instance.TalkStart(dia);
     }
+    
     private void Update()
     {
         //»¥¶¯¼ü°´ÏÂ
-        if (SprTip.enabled&&Input.GetKeyDown(KeyCode.E))
+        if (SprTip.enabled&&Input.GetKeyDown(KeyCode.E)&&!Player.Instance.InTalk)
         {
             if(CanTalk) Talk();
             if(CanPack) IntpPackage();

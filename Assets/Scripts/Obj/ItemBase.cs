@@ -9,6 +9,8 @@ public abstract class ItemBase : MonoBehaviour
     public bool CanTalk;
     public bool CanPack;
 
+    public DiaLogData.DiaLogue dia;
+
     public Collider2D Collider;
 
     private void Start()
@@ -18,7 +20,6 @@ public abstract class ItemBase : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print(1);   
         if (collision.tag != "Player") return;
         ShowTip();
     }
