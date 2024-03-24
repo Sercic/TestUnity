@@ -10,7 +10,7 @@ public abstract class ItemBase : MonoBehaviour
     public bool CanTalk;
     public bool CanPack;
 
-    public DiaLogData.DiaLogue dia;
+    public DiaLogue dia;
 
     public Collider2D Collider;
 

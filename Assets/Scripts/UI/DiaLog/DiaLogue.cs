@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DiaLogData
-{
     //代表一个对话节点
     [Serializable]
     public class DiaLogNode
@@ -24,4 +22,3 @@ public class DiaLogData
             return diaLogNodes[index].content;
         }
     }
-}

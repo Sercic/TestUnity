@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: d24c6d6a30f32cf429c3971b1765d69c, type: 3}
   m_Name: DiaIfNoKey
-  m_EditorClassIdentifier: Assembly-CSharp::DiaLogData/DiaLogue
+  m_EditorClassIdentifier: 
   diaLogNodes:
   - content: "\u4F60\u6CA1\u6709\u94A5\u5319"

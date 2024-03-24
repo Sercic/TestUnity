@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
 
     }
 
-    public void TalkStart(DiaLogData.DiaLogue dia)
+    public void TalkStart(DiaLogue dia)
     {
         DiaPanel = UGPanelManager.Instance.ShowPanel<DiaLogPanel>();
         DiaPanel.SetDia(dia);

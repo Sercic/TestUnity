@@ -35,7 +35,7 @@ public class DoorItem : ItemBase
         Player.Instance.TalkStart(dia);
     }
 
-    private void Talk(DiaLogData.DiaLogue dia)
+    private void Talk(DiaLogue dia)
     {
         if (dia == null) return;
         Player.Instance.TalkStart(dia);
@@ -44,7 +44,7 @@ public class DoorItem : ItemBase
     public bool IsLocked;
     public int Key;
     [SerializeField]
-    private DiaLogData.DiaLogue DiaifNoKey;
+    private DiaLogue DiaifNoKey;
 
     public string SceneName;
     [SerializeField]

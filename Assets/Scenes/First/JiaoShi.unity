@@ -571,6 +571,10 @@ PrefabInstance:
       value: ItemBase
       objectReference: {fileID: 0}
     - target: {fileID: 7392819935563067897, guid: 1d37df6f591e9a84aa560c692ff2adc9, type: 3}
+      propertyPath: dia
+      value: 
+      objectReference: {fileID: 11400000, guid: 55d5181ffb22d544dbf8d51462fd1580, type: 2}
+    - target: {fileID: 7392819935563067897, guid: 1d37df6f591e9a84aa560c692ff2adc9, type: 3}
       propertyPath: CanPack
       value: 1
       objectReference: {fileID: 0}
@@ -680,8 +684,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7712316777281362068, guid: 87c12aa0b9b54cf499f04f989618505a, type: 3}
+      propertyPath: dia
+      value: 
+      objectReference: {fileID: 11400000, guid: 55d5181ffb22d544dbf8d51462fd1580, type: 2}
+    - target: {fileID: 7712316777281362068, guid: 87c12aa0b9b54cf499f04f989618505a, type: 3}
       propertyPath: CanTalk
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7712316777281362068, guid: 87c12aa0b9b54cf499f04f989618505a, type: 3}
       propertyPath: IsLocked
@@ -695,6 +703,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7712316777281362068, guid: 87c12aa0b9b54cf499f04f989618505a, type: 3}
+      propertyPath: DiaifNoKey
+      value: 
+      objectReference: {fileID: 11400000, guid: 2fc70ff94930197449bb556ce3f57c5f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -7,13 +7,13 @@ using UnityEngine.UI;
 public class DiaLogPanel : UGPanelBase
 {
 
-    private DiaLogData.DiaLogue dia;
+    private DiaLogue dia;
 
     private int nowDiaIndex;
 
     public Text TextShow;
 
-    public void SetDia(DiaLogData.DiaLogue Inputdia)
+    public void SetDia(DiaLogue Inputdia)
     {
         dia = Inputdia;
         nowDiaIndex = 0;
