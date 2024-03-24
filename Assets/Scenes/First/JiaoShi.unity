@@ -570,6 +570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ItemBase
       objectReference: {fileID: 0}
+    - target: {fileID: 7392819935563067897, guid: 1d37df6f591e9a84aa560c692ff2adc9, type: 3}
+      propertyPath: CanPack
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7598001867524949463, guid: 1d37df6f591e9a84aa560c692ff2adc9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.75
@@ -666,6 +670,30 @@ PrefabInstance:
     - target: {fileID: 3838024498516044595, guid: 87c12aa0b9b54cf499f04f989618505a, type: 3}
       propertyPath: m_Name
       value: RightDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712316777281362068, guid: 87c12aa0b9b54cf499f04f989618505a, type: 3}
+      propertyPath: ID
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712316777281362068, guid: 87c12aa0b9b54cf499f04f989618505a, type: 3}
+      propertyPath: Key
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712316777281362068, guid: 87c12aa0b9b54cf499f04f989618505a, type: 3}
+      propertyPath: CanTalk
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712316777281362068, guid: 87c12aa0b9b54cf499f04f989618505a, type: 3}
+      propertyPath: IsLocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712316777281362068, guid: 87c12aa0b9b54cf499f04f989618505a, type: 3}
+      propertyPath: SceneName
+      value: Zoulang
+      objectReference: {fileID: 0}
+    - target: {fileID: 7712316777281362068, guid: 87c12aa0b9b54cf499f04f989618505a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

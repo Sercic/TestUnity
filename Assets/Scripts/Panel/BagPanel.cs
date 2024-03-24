@@ -20,30 +20,30 @@ public class BagPanel : BasePanel<BagPanel>
     public override void ShowMe()  //显示背包中物品
     {
         base.ShowMe();
-        List<itemInfo> list = DataMgr.Instance.itemData.itemList;
+        List<int> list = DataMgr.Instance.itemData.itemList;
 
         if(list.Count != 0)
         {
-            if (list[0].name != null)
+            if (list[0] != null)
             {
-                lab0.text = list[0].name;
-                GameObject o1 = Instantiate(Resources.Load<GameObject>("UI/" + list[0].name));
+                lab0.text = DataMgr.Instance.itemDic[list[0]].name ;
+                GameObject o1 = Instantiate(Resources.Load<GameObject>("UI/" + DataMgr.Instance.itemDic[list[0]].name));
                 o1.transform.SetParent(obj0.transform, false);
                 o1.transform.localPosition = Vector3.zero;
             }
 
-            if (list[1].name != null)
+            if (list[1] != null)
             {
-                lab0.text = list[1].name;
-                GameObject o2 = Instantiate(Resources.Load<GameObject>("UI/" + list[1].name));
+                lab0.text = DataMgr.Instance.itemDic[list[1]].name;
+                GameObject o2 = Instantiate(Resources.Load<GameObject>("UI/" + DataMgr.Instance.itemDic[list[1]].name));
                 o2.transform.SetParent(obj1.transform, false);
                 o2.transform.localPosition = Vector3.zero;
             }
 
-            if (list[2].name != null)
+            if (list[2] != null)
             {
-                lab0.text = list[2].name;
-                GameObject o3 = Instantiate(Resources.Load<GameObject>("UI/" + list[2].name));
+                lab0.text = DataMgr.Instance.itemDic[list[2]].name;
+                GameObject o3 = Instantiate(Resources.Load<GameObject>("UI/" + DataMgr.Instance.itemDic[list[2]].name));
                 o3.transform.SetParent(obj2.transform, false);
                 o3.transform.localPosition = Vector3.zero;
             }

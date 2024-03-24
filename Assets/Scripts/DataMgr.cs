@@ -14,16 +14,14 @@ public class DataMgr
         itemData = XmlDataMgr.Instance.LoadData(typeof(ItemData),"ItemData") as ItemData;
     }
 
+    public SerizlizerDictionaryInspector<int,itemInfo> itemDic = Resources.Load<ItemDic>("itemDic").ItemDIc;
+
     //添加道具
-    void AddItemData(string name,int count,UISprite sprite)
+    public void AddItemData(int Id)
     {       
         if(itemData.itemList.Count<3)
         {
-            //没同名添加
-            itemInfo info = new itemInfo();
-            info.name = name;
-            info.sprite = sprite;
-            itemData.itemList.Add(info);
+            itemData.itemList.Add(Id);
             XmlDataMgr.Instance.SaveData(itemData, "ItemData");
         }
         else
@@ -34,16 +32,23 @@ public class DataMgr
     }
 
     //减少道具
-    void DeleteItemData(string name)
+    public void DeleteItemData(int Id)
     {
         for(int i = 0;i<itemData.itemList.Count; i++)
         {
-            if (itemData.itemList[i].name == name)
+            if (itemData.itemList[i] == Id)
             {
                 //若数量小于0了删去物品                
                     itemData.itemList.RemoveAt(i);               
             }
         }
         XmlDataMgr.Instance.SaveData(itemData, "ItemData");
+    }
+
+    //获取道具数据
+    public itemInfo  GetItemInfo(int Id)
+    {
+        if (itemDic.ContainsKey(Id)) return itemDic[Id];
+        return null;
     }
 }

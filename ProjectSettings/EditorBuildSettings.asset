@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/First/WC.unity
     guid: 1b9de81375736ae42af3fc970a258d60
+  - enabled: 1
+    path: Assets/Scenes/First/Zoulang.unity
+    guid: 087f67f1f967b2c42a27bb57f4e7711a
   m_configObjects: {}

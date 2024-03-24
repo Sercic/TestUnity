@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 using UnityEngine;
 
+[Serializable]
 public class SerizlizerDictionary<TKey, TValue> : Dictionary<TKey, TValue>, IXmlSerializable
 {
     public XmlSchema GetSchema()
@@ -12,7 +14,7 @@ public class SerizlizerDictionary<TKey, TValue> : Dictionary<TKey, TValue>, IXml
         return null;
     }
 
-    //自定义字典的 反序列化 规则
+    //自定义字典的 反Xml序列化 规则
     public void ReadXml(XmlReader reader)
     {
         XmlSerializer keySer = new XmlSerializer(typeof(TKey));
@@ -32,7 +34,7 @@ public class SerizlizerDictionary<TKey, TValue> : Dictionary<TKey, TValue>, IXml
         }
     }
 
-    //自定义 字典的 序列化 规则
+    //自定义 字典的 Xml序列化 规则
     public void WriteXml(XmlWriter writer)
     {
         XmlSerializer keySer = new XmlSerializer(typeof(TKey));

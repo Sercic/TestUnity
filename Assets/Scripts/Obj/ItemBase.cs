@@ -5,7 +5,8 @@ using UnityEngine;
 public abstract class ItemBase : MonoBehaviour
 {
     public SpriteRenderer SprTip;
-    public int ID { get; }
+    [SerializeField]
+    protected int ID;
     public bool CanTalk;
     public bool CanPack;
 
@@ -41,5 +42,5 @@ public abstract class ItemBase : MonoBehaviour
 
     protected abstract void Talk();
 
-    protected abstract int IntpPackage();
+    protected abstract void IntoPackage();
 }

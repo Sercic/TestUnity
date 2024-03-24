@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ItemTest : ItemBase{
-    protected override int IntpPackage()
+    protected override void IntoPackage()
     {
-        throw new System.NotImplementedException();
+        DataMgr.Instance.AddItemData(this.ID);
+        print("获取了物品" + DataMgr.Instance.itemDic[ID].name);
     }
 
     protected override void Talk()
@@ -19,7 +20,7 @@ public class ItemTest : ItemBase{
         if (SprTip.enabled&&Input.GetKeyDown(KeyCode.E)&&!Player.Instance.InTalk)
         {
             if(CanTalk) Talk();
-            if(CanPack) IntpPackage();
+            if(CanPack) IntoPackage();
         }
     }
 }
