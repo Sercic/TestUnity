@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DiaTest
   m_EditorClassIdentifier: Assembly-CSharp::DiaLogData/DiaLogue
   diaLogNodes:
-  - content: "\u8FD9\u662F\u4E00\u6BB5\u6D4B\u8BD5\u5BF9\u8BDD"
-  - content: 
-  - content: 
-  - content: 
+  - content: "\u8FD9\u662F\u4E00\u6BB5\u6D4B\u8BD5\u5BF9\u8BDD,\u8BF7\u6309E\u952E\u7EE7\u7EED"
+  - content: Continue1
+  - content: Continue2
+  - content: "\u7EE7\u7EED\u6309EOver\u5BF9\u8BDD"
