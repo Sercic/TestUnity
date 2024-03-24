@@ -9,6 +9,7 @@ public class ItemData
 
 public class itemInfo
 {
+    public int id;
     public string name;
     public UISprite sprite;
 }

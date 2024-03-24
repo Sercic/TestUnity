@@ -147,7 +147,7 @@ MonoBehaviour:
   SprTip: {fileID: 3724432931277337712}
   CanTalk: 1
   CanPack: 0
-  dia: {fileID: 11400000, guid: 2091257b974a6fd48a31bb6ed526a72b, type: 2}
+  dia: {fileID: 11400000, guid: bdb653d74ced8d44798c3d947df81406, type: 2}
   Collider: {fileID: 8352275115500463264}
 --- !u!1 &4113249902509414680
 GameObject:

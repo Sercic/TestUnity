@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
     }
     public void TalkOver()
     {
-        DiaPanel.HideMe();
+        UGPanelManager.Instance.HidePale<DiaLogPanel>();
         InTalk = false;
     }
 }
