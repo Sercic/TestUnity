@@ -10,7 +10,7 @@ public abstract class UGPanelBase : MonoBehaviour
     }
     public void HideMe()
     {
-        this.gameObject.SetActive(false);
+        Destroy(gameObject);
     }
     public void Awake()
     {

@@ -4,10 +4,11 @@ using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[SerializeField]
 public enum EDoorLockedType
 {
-    有钥匙直接进,
-    消耗钥匙后让Loced变化
+    直接进,
+    消耗钥匙
 
 }
 public class DoorItem : ItemBase
@@ -57,10 +58,10 @@ public class DoorItem : ItemBase
         {
             switch (etype)
             {
-                case EDoorLockedType.有钥匙直接进:
+                case EDoorLockedType.直接进:
                     this.IsLocked = false;
                     break;
-                case EDoorLockedType.消耗钥匙后让Loced变化:
+                case EDoorLockedType.消耗钥匙:
                     DataMgr.Instance.DeleteItemData(ID);
                     this.IsLocked = false;
                     return;

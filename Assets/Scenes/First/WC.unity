@@ -573,7 +573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7712316777281362068, guid: 87c12aa0b9b54cf499f04f989618505a, type: 3}
       propertyPath: SceneName
-      value: JiaoShi
+      value: Zoulang
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -777,6 +777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SprTip: {fileID: 3854431987922223905}
+  ID: 0
   CanTalk: 0
   CanPack: 0
   dia: {fileID: 0}

@@ -32,7 +32,6 @@ public class UGPanelManager
         string panelName = typeof(T).Name;
         if (!strPanelDic.ContainsKey(panelName)) return;
         strPanelDic[panelName].HideMe();
-        GameObject.Destroy(strPanelDic[panelName]);
         strPanelDic.Remove(panelName);
     }
 }
